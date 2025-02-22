@@ -1,1 +1,209 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./styles/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import "aos/dist/aos.css";
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+  color: map-get($theme-colors, text);
+  background-color: map-get($theme-colors, background);
+}
+
+// Global Utility Classes
+// Font Weights
+.text-thin {
+  font-weight: $font-thin;
+}
+.text-light {
+  font-weight: $font-light;
+}
+.text-regular {
+  font-weight: $font-regular;
+}
+.text-medium {
+  font-weight: $font-medium;
+}
+.text-semibold {
+  font-weight: $font-semi-bold;
+}
+.text-bold {
+  font-weight: $font-bold;
+}
+.text-extrabold {
+  font-weight: $font-extra-bold;
+}
+.text-2xbold {
+  font-weight: $font-2xbold;
+}
+
+// Line Heights
+.lh-sm {
+  line-height: $line-h-sm;
+}
+.lh-med {
+  line-height: $line-h-med;
+}
+.lh-lg {
+  line-height: $line-h-lg;
+}
+
+// Letter Spacing
+.ls-sm {
+  letter-spacing: $letter-sm;
+}
+.ls-med {
+  letter-spacing: $letter-med;
+}
+.ls-lg {
+  letter-spacing: $letter-lg;
+}
+
+// Text Colors
+.text-black {
+  color: $black;
+}
+.text-dark-gray {
+  color: $dark-gray;
+}
+.text-gray {
+  color: $gray;
+}
+.text-light-gray {
+  color: $light-gray;
+}
+.text-white {
+  color: $white;
+}
+
+// Background Colors
+.bg-black {
+  background-color: $black;
+}
+.bg-dark-gray {
+  background-color: $dark-gray;
+}
+.bg-gray {
+  background-color: $gray;
+}
+.bg-light-gray {
+  background-color: $light-gray;
+}
+.bg-white {
+  background-color: $white;
+}
+
+// Font Sizes
+.fs-small {
+  font-size: $fs-small;
+}
+.fs-medium {
+  font-size: $fs-medium;
+}
+.fs-large {
+  font-size: $fs-large;
+}
+.fs-xlarge {
+  font-size: $fs-xlarge;
+}
+.fs-2xlarge {
+  font-size: $fs-2xlarge;
+}
+
+// Background Shadows
+.shadow-md {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.shadow-lg {
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+.shadow-xl {
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+.shadow-2xl {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+// Containers
+.container {
+  width: 100%;
+}
+.max-width-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Typography
+.logo {
+  font-size: $fs-large;
+  font-weight: $font-extra-bold;
+  letter-spacing: $letter-lg;
+}
+
+h1 {
+  font-size: $fs-2xlarge;
+  font-weight: $font-bold;
+  line-height: $line-h-lg;
+  letter-spacing: $letter-lg;
+}
+
+h2 {
+  font-size: $fs-xlarge;
+  font-weight: $font-bold;
+  line-height: $line-h-lg;
+  letter-spacing: $letter-lg;
+}
+
+p,
+label,
+button {
+  font-size: $fs-small;
+  letter-spacing: $letter-sm;
+}
+
+// Keyframe animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cta-button {
+  font-weight: $font-bold;
+  padding: 12px 30px;
+  background: $white;
+  border: none;
+  border-radius: 20px 0 20px 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    border-radius: 0 20px 0 20px;
+    opacity: 0.9;
+  }
+}
+
+.icon {
+  font-size: $fs-small;
+  color: $gray;
+  margin: 0 10px;
+}

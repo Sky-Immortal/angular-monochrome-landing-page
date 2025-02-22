@@ -1,0 +1,18 @@
+<div class="container">
+  <section class="stats-container max-width-container">
+    <div 
+      *ngFor="let stat of stats; let i = index" 
+      class="stats-card shadow-lg"
+      data-aos="fade-up"
+      [attr.data-aos-delay]="i * 150"
+      data-aos-duration="500"
+      data-aos-once="true"
+    >
+      <fa-icon [icon]="stat.icon"></fa-icon>
+      <div class="stats-info">
+        <h2 [countUp]="stat.number" [options]="{ duration: 2 }"></h2>
+        <p>{{ stat.text }}</p>
+      </div>
+    </div>
+  </section>
+</div>

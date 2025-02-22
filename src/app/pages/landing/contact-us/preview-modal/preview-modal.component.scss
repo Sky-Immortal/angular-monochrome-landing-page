@@ -1,0 +1,55 @@
+@import "../../../../../styles/variables.scss";
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $opaque-black;
+  z-index: 1000;
+}
+
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $white;
+  padding: 20px 30px;
+  z-index: 1001;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+
+
+  h2 {
+    margin-top: 0;
+    color: $gray;
+  }
+
+  .preview-content {
+    margin: 20px 0;
+    p {
+      margin: 8px 0;
+      color: $gray;
+    }
+  }
+
+  .modal-actions {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+
+    .action-icon {
+      font-size: $fs-xlarge;
+      cursor: pointer;
+      color: $gray;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+}

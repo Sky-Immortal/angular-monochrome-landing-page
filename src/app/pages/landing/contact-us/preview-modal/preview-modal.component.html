@@ -1,0 +1,14 @@
+<div class="modal-backdrop" (click)="onEdit()"></div>
+<div class="modal-container shadow-lg" >
+  <h2>{{ TEXTS.CONTACT.preview_title }}</h2>
+  <div class="preview-content">
+    <p><strong>{{ TEXTS.GENERAL.name_label }}</strong> {{ name }}</p>
+    <p><strong>{{ TEXTS.GENERAL.email_label }}</strong> {{ email }}</p>
+    <p><strong>{{ TEXTS.GENERAL.message_label }}</strong></p>
+    <p>{{ message }}</p>
+  </div>
+  <div class="modal-actions">
+    <fa-icon class="action-icon" [icon]="icons.edit" (click)="onEdit()"></fa-icon>
+    <fa-icon class="action-icon" [icon]="icons.check" (click)="onConfirm()"></fa-icon>
+  </div>
+</div>

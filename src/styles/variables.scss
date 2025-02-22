@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+$black: #000000;
+$dark-gray: #1a1a1a;
+$gray: #3d3d3d;
+$light-gray: #b0b0b0;
+$white: #ffffff;
+
+// Opaque Colors
+$opaque-black: #00000033;
+$opaque-dark-gray: #1a1a1a33;
+$opaque-gray: #3d3d3d33;
+$opaque-light-gray: #b0b0b033;
+$opaque-white: #ffffff33;
+
+// Theme Colors
+$theme-colors: (
+  primary: $dark-gray,
+  secondary: $gray,
+  accent: $light-gray,
+  text: $black,
+  background: $white
+);
+
+// Font
+$font-stack: 'Poppins', sans-serif;
+
+// Font Sizes
+$fs-small: 12px;
+$fs-medium: 14px;
+$fs-large: 20px;
+$fs-xlarge: 30px;
+$fs-2xlarge: 40px;
+
+// Font Weights
+$font-thin: 100;
+$font-extra-light: 200;
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 700;
+$font-extra-bold: 800;
+$font-2xbold: 900;
+
+// Letter Spacing
+$letter-sm: 1px;
+$letter-med: 2px;
+$letter-lg: 3px;
+
+// Line Height
+$line-h-sm: 1.2;
+$line-h-med: 1.5;
+$line-h-lg: 1.8;

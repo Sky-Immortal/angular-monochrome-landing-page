@@ -1,0 +1,86 @@
+@import "../../../../styles/variables.scss";
+
+.testimonial-container {
+  max-width: 1100px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  margin: 0 auto; // Centering
+  padding: 50px 0;
+  background: $white;
+}
+
+.testimonial-track {
+  display: flex;
+  gap: 30px;
+  animation: scroll 30s linear infinite;
+  width: max-content;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: $white;
+  border-radius: 10px;
+  padding: 20px;
+  min-width: 250px;
+  max-width: 300px;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    z-index: 1000;
+  }
+
+  h3 {
+    font-size: $fs-large;
+    font-weight: $font-bold;
+  }
+
+  p {
+    text-align: center;
+    white-space: wrap;
+  }
+}
+
+// Infinite Scroll Animation
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50.5%);
+  }
+}
+
+// media queries
+@media (max-width: 768px) {
+  .testimonial-container {
+    width: 100%;
+  }
+
+  .testimonial-card {
+    min-width: 150px;
+    max-width: 200px;
+    padding: 10px;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    h3 {
+      font-size: $fs-medium;
+    }
+  }
+}

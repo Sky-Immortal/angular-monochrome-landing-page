@@ -1,0 +1,22 @@
+<div class="container">
+<div class="gallery-page max-width-container">
+    <!-- Left Side: Gallery Text -->
+    <div class="gallery-text">
+      <h2>Our Gallery</h2>
+      <p>
+        Enjoy a curated selection of images capturing our best moments. If you see the indicator on the right, there's more content below.
+      </p>
+    </div>
+  
+    <!-- Right Side: Gallery Container -->
+    <div class="gallery-container">
+      <div #galleryContent class="gallery-images">
+        <img *ngFor="let image of images" [src]="image" alt="Gallery image" />
+      </div>
+      <!-- Scroll Indicator (only shows if content overflows) -->
+      <div class="scroll-indicator" *ngIf="hasMore">
+        <fa-icon [icon]="downIcon"></fa-icon>
+      </div>
+    </div>
+  </div>
+</div>

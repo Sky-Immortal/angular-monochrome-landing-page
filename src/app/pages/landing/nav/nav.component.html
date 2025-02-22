@@ -1,0 +1,22 @@
+<div class="container">
+    <nav class="navbar max-width-container bg-white text-black" [class.sticky]="isSticky">
+      <h2 class="logo">{{ texts.GENERAL.logo }}</h2>
+  
+      <button class="menu-toggle" (click)="toggleNavbar()">☰</button>
+  
+      <div class="menu-container" [class.open]="isMenuOpen">
+        <ul>
+          <li><a href="#">{{ texts.NAV.link1 }}</a></li>
+          <li><a href="#">{{ texts.NAV.link2 }}</a></li>
+          <li><a href="#">{{ texts.NAV.link3 }}</a></li>
+          <li><a href="#">{{ texts.NAV.link4 }}</a></li>
+        </ul>
+  
+        <ul>
+          <li><a href="#">{{ texts.NAV.login }}</a></li>
+          <li><a href="#">{{ texts.NAV.signup }}</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  

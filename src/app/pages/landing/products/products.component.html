@@ -1,0 +1,20 @@
+<div class="container">
+    <section class="products-section max-width-container">
+        <div *ngFor="let offer of offers; let i = index" 
+        class="offer-container" 
+        [ngClass]="{'reverse': i % 2 !== 0}"  data-aos="fade-up">
+
+            <div class="offer-text">
+               
+                <h2>
+                    <fa-icon [icon]="offer.icon" class="offer-icon"></fa-icon>
+                    {{ offer.title }}</h2>
+                <p>{{ offer.description }}</p>
+            </div>
+
+            <div class="offer-image">
+                <img [src]="offer.image" alt="{{ offer.title }}" />
+            </div>
+        </div>
+    </section>
+</div>

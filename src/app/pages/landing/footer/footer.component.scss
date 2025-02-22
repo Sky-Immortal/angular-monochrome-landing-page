@@ -1,0 +1,45 @@
+@import "../../../../styles/variables.scss";
+
+.footer {
+    background-color: $black;
+    color: $white;
+    padding: 20px;
+    text-align: center;
+  
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+  
+      .footer-links {
+        margin: 10px 0;
+        a {
+          color: $light-gray;
+          text-decoration: none;
+          margin: 0 10px;
+          font-size: 0.9rem;
+          transition: color 0.3s;
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+  
+      .social-media {
+        margin: 10px 0;
+        a .icon{
+          color: $light-gray;
+          margin: 0 20px;
+          font-size: $fs-xlarge;
+          transition: color 0.3s;
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+  
+      .created-by {
+        color: $light-gray;
+      }
+    }
+  }
+  
