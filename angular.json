@@ -42,6 +42,7 @@
             "outputPath": "dist/new-web-angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "baseHref": "/",
             "polyfills": [
               "zone.js"
             ],
