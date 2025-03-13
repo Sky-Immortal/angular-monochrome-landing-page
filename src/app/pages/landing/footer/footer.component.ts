@@ -11,5 +11,4 @@ import { SHARED_IMPORTS } from '../../../shared/constants/shared-imports';
 export class FooterComponent {
   texts = TEXTS
   icons = ICONS
-  
 }
